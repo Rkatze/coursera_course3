@@ -2,6 +2,8 @@
 project assignment for course 3
 The "run_analysis.R" file contains five parts. Each part answers one question from the assignment.
 
+The original data is available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 At first, I read all the data and named them as required. 
 The first part merges the training and the test data sets with cbind() and rbind().
 Two data sets ("test" and "train") were merged into a large one called "merged". 
