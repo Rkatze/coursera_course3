@@ -1,0 +1,34 @@
+Data
+activity_lables.txt - text file with the names of each activity
+features.txt - text file with the names of each measurement
+X_train.txt - text file with training data
+y_train.txt - text file with the lables for each measurement
+subject_train.txt - text file with the labels for each subject
+X_test.txt - text file with testing data
+y_test.txt - text file with the labels for each measurement
+subject_test.txt - text file with the labels for each subject
+tidydf.txt - tidy dataset created by run_analysis.R
+
+Variables
+activityLable - variable with the names of each activity
+features - variable with the names of each measurement
+extracted - variable with mean and standard deviation measurements only
+trainX - variable with training data
+trainy - variable with labels for each measurement
+trainSubject - variable with labels for each subject
+train - variable with training data, measurement labels, and subject labels combined
+testX - variable with test data
+testy - variable with labels for each measurement
+testSubject - variable with labels for each subject
+test - variable with test data, measurement labels, and subject labels combined
+merged - variable with training and test data combined
+
+Transformations
+as.character - converted the activity and feature labels to character strings
+grep - extracted mean and standard deviation measurements only
+gsub - tidied the measurement names
+cbind - used to combine training variables together and to combine test variables together
+rbind - used to combine training and test variables
+names - changed the names in the combined training and test dataset
+aggregate - aggregateed measurements for each subject and activity
+write.table - created output dataset wearable.txt
